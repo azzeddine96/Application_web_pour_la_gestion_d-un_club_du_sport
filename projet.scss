@@ -1,0 +1,10 @@
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax($val, 1fr));
+    gap: 1.5rem;
+}
+.features .box-container{
+    @include grid(32rem);
+    gap: 0;
+}
+

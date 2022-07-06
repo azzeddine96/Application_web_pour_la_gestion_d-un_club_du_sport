@@ -1,0 +1,1448 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{font-family: 'Nunito', sans-serif;
+ margin: 0;padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ outline: none;
+ 
+ text-transform: capitalize;
+ 
+}
+
+
+html{
+    font-size: 70%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+
+}
+body{
+    background: black;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    background: black;
+    z-index: 1000;
+
+}
+
+.logo{
+    font-weight: border;
+    color: white;
+    font-size: 3rem;
+    
+}
+.logo2{
+    color: red;
+}
+.navbar a{
+    display: inline-block;
+    padding: 2rem 1.5rem;
+    font-size: 1.7rem;
+    color: white;
+    cursor: pointer;
+}
+.navbar a:hover,.navbar a:active{
+    background: red;
+}
+
+#menu-btn{
+    font-size: 3rem;
+    color: white;
+
+    cursor: pointer;
+    display: none;
+    
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.section .imagelogin img{
+    height: 70vh;
+    width: 55vw ;
+  
+    margin-left: 100px;
+    box-shadow: rgba(58, 57, 57, 0.9);
+    filter: brightness(.6);
+    
+}
+.combobox{
+    width: 150px;
+    height: 40px;
+    font-size: 1.3rem;
+    color: #aaa;
+    background: black;
+}
+.abonn{
+    color: #aaa;
+    font-size: 1.7rem;
+}
+.form{
+    width: 420px;
+    height: 625px;
+    margin-top: 80px;
+   
+}
+.form .input{
+    background: transparent;
+    height: 30px;
+    border-top: 0;border-bottom: 1px solide rgb(90, 87, 87);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 200;
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    color:white;
+}
+.form .checkbox span{
+    font-size: 1.5rem;
+    color:white;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+.form .submit{
+    border: 0.8px solid rgb(22, 22, 21);
+    font-size: 2rem;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 80px;
+    box-shadow: rgba(58, 57, 57, 0.9);
+    background: rgb(235, 46, 12);
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    letter-spacing: .3rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+   
+}
+.err{
+    margin: 3rem;
+    color: red;
+    font-size: 2rem;
+
+}
+.msg{
+    margin: 3rem;
+    color: red;
+    font-size: 2rem;
+}
+.erreur{
+    color: aliceblue;
+    font-size: 1.3rem;
+    margin: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+.form .submit:hover{
+    letter-spacing: .4rem;
+    background: rgb(240, 138, 5);
+}
+.form .nv_cmpt .new{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: aliceblue;
+    font-style: italic;
+}
+.form .nv_cmpt .creer{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: rgb(230, 23, 23);
+    font-style: italic;
+    margin-left: 5px;
+}
+.form .nv_cmpt{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.form .date{
+    height: 30px;
+    border-top: 0;border-bottom: 1px solide rgb(90, 87, 87);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 200;
+    margin-top: 20px;
+    color:white;
+    background: transparent; 
+}
+.form .start{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 300;
+    color:rgb(90, 87, 87);
+    margin-right: 5px;
+}
+
+.principal{
+    padding: 5rem 9%;
+    margin-top: 6.5rem;
+    padding: 0;
+}
+.swiper-slide{
+    min-height: 70vh;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+}
+.swiper-slide .content{
+    width: 60rem;
+}
+.swiper-slide .content span{
+    font-size: 2rem;
+    color: red;
+    display: block;
+}
+.swiper-slide .content h3{
+    font-size: 5rem;
+    color: white;
+    padding: 1rem 0;
+    font-weight: 400;
+}
+
+.swiper-slide .content .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, red 93%, transparent 90%);
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.swiper-slide .content .btn:hover{
+    transform: scale(1.1);
+    
+}
+.swiper-pagination-bullet{
+    height: 2rem;
+    width: 2rem;
+    background: white;
+    border-radius: 0;
+    
+}
+.swiper-pagination-bullet-active{
+    background: red;
+}
+
+.swiper-pagination{
+    margin-bottom: 10px;
+}
+.swiper-button-next{
+    color: red;
+    background: transparent;
+}
+.swiper-button-prev{
+    color: red;
+    background: transparent;
+}
+#abouts{
+    margin-top: 10rem;
+}
+.abouts{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 7rem;
+}
+
+.imageabout{
+    flex: 1 1 42rem;
+    position: relative;
+}  
+.imageabout::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: red;
+    height: 15rem;
+    width: 15rem;
+    bottom: 0;right: 0;
+}
+.imageabout::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: red;
+    height: 15rem;
+    width: 15rem;
+    top: 0;left: 0;
+}
+
+.imageabout img{
+    height: 92vh ;
+    width: 40vw;
+   padding: 2rem;
+   
+    
+}
+.contentabout{
+    flex: 1 1 42rem;
+}
+.contentabout span{
+    font-size: 2rem;
+    color: red;
+}
+
+.titleabout{
+    font-size: 4rem;
+    color: white;
+    margin-top: .5rem;
+
+}
+.contentabout .box-container{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+
+}
+.box{
+    flex: 1 1 20rem;
+}
+.box h3{
+    font-size: 2rem;
+    color: white;
+}
+.box h3 i{
+    padding-right: 1.5rem;
+    color: red;
+}
+
+.contentabout .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, red 93%, transparent 90%);
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+   
+}
+.contentabout .btn:hover{
+    transform: scale(1.1);
+}
+.box p{
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.error{
+    color: red;
+    font-size: 2rem;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 5rem;
+    color: rgb(245, 6, 6);
+    position: relative;
+    border: #aaa 2px solide;
+    border-radius: 10px;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    padding: .7rem;
+    
+}
+.plusinfo{
+    margin-top: .5rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, red 93%, transparent 90%);
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.plusinfo:hover{
+    transform: scale(1.1);
+    transition: .3;
+    
+}
+.features .box-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 2rem 3rem;
+
+}
+
+.features .box-container .box{
+    background: rgb(26, 25, 25);
+}
+.features .box-container .box .image{
+    margin-top: 40px;
+    cursor: pointer;
+}
+.features .box-container .box .image:hover{
+  transform: scale(1.05);
+  transition: .2;
+  
+}
+.box-container .content img{
+    height: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    filter: invert();
+    
+}
+
+.pricing .information .btn{
+    margin-top: .5rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, red 93%, transparent 90%);
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.pricing .plan .btn{
+    margin-top: .5rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, red 93%, transparent 90%);
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.pricing{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+    justify-content: center;
+   
+}
+.information h1{
+    font-size: 3rem;
+    color: red;
+    padding: 1.5rem;
+    text-align: center;
+}
+.information h3{
+    font-size: 4rem;
+    color: white;
+    padding-top: .5rem;
+    margin: 2rem 0;
+}
+.information p{
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: #aaa;
+    margin-left: 5rem;
+    
+}
+.information i{
+    color: red;
+    padding-right: 1rem;
+}
+.plan{
+    text-align: center;
+    padding: 2rem;
+    margin-right: 8rem;
+    margin-left: 8rem;
+    margin-top: 4rem;
+    background: linear-gradient(130deg, rgb(34, 34, 34), transparent 90%);
+}
+.plan h3{
+    font-size: 3rem;
+    margin: 1rem 0;
+    color: red;
+}
+.plan .price{
+    font-size: 5rem;
+    font-weight: bolder;
+    color: red;
+}
+.plan .price span{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.plan p{
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: #aaa;
+}
+.plan i{
+    color: red;
+    padding-right: .7rem;
+}
+
+.list{
+    padding: 1rem o;
+}
+.pricing .btn{
+    margin: 1.5rem 0;
+}
+
+/*page entraineur */
+
+.entraineur{
+    margin-top: 20rem;
+    
+    color: #aaa;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.entraineur .ajouter{
+    height: 70vh;
+    cursor: pointer;
+    margin-left: 10rem;
+    background: linear-gradient(150deg, rgb(46, 44, 44), transparent 90%);
+    padding: 5rem 8rem;
+}
+.entraineur .modifier{
+    height: 70vh;
+    cursor: pointer;
+    margin-left: 25rem;
+    background: linear-gradient(130deg, rgb(46, 44, 44), transparent 90%);
+    padding: 5rem 8rem;
+}
+
+
+.entraineur .ajouter a{
+    color: rgb(245, 237, 237);
+    
+    font-weight: 500;
+    background: linear-gradient(130deg, red 93%, transparent 90%);
+    padding: .5rem;
+}
+.entraineur .modifier a{
+    color: rgb(245, 237, 237);
+    border: 1px red solid;
+    
+    font-weight: 500;
+    background: linear-gradient(130deg, red 93%, transparent 90%);
+    padding: .5rem;
+}
+.ajouter:hover{
+    transform: scale(1.15);
+}
+.modifier:hover{
+    transform: scale(1.15);
+}
+.ajouter a:hover{
+    transform: scale(1.15);
+    background: rgb(235, 176, 68);
+    border: none;
+}
+.modifier a:hover{
+    transform: scale(1.15);
+    background: rgb(235, 176, 68);
+    border: none;
+    transition: .5s;
+   
+}
+.versliste{
+    background: red;
+    font-size: 1.7rem;
+    
+    color: white;
+    padding: 1.3rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+    margin-top: 7rem;
+    
+}
+.versliste:hover{
+    transform: scale(1.15);
+    background: rgb(235, 176, 68);
+    border: none;
+    transition: .5s;
+}
+
+
+/* code partie programme */
+
+.programmes .titleprog {
+    
+    color: white;
+    font-size: 3.5rem;
+    margin-left: 200px;
+}
+
+.boxprog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10rem;
+   
+}
+.prog{
+    margin: 10rem 3rem;
+    cursor: pointer;
+   
+}
+.prog .imgpoitrines img{
+    width: 380px;
+    height: 420px;
+}
+.prog .imgdorsseau img{
+    width: 380px;
+    height: 420px;
+}
+.prog .imgbras img{
+    width: 380px;
+    height: 420px;
+}
+.prog .imgjambes img{
+    width: 380px;
+    height: 420px;
+}
+.prog .imgepaules img{
+    width: 380px;
+    height: 420px;
+}
+.prog .imgabdo img{
+    width: 380px;
+    height: 420px;
+}
+.infosprog{
+    padding: 1rem;
+    background:rgb(29, 28, 28);
+    
+    
+}
+.infosprog:hover{
+    transform: translateY(-5rem);
+    transition: .6s;
+    
+}
+.prog:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    
+}
+.infosprog span{
+    font-size: 2rem;
+    color: red;
+    margin-left: 9rem;
+}
+.infosprog h3{
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 5rem;
+}
+.infosprog .share{
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: #aaa .12rem solid;
+}
+.infosprog .share a{
+    font-size: 4rem;
+    color: white;
+    margin-left: 4.5rem;
+}
+.infosprog .share a:hover{
+    color: red;
+}
+
+/* partie promotion */
+
+.banner{
+    background: linear-gradient(rgba(0,0,0,.5) , rgba(0,0,0,.5)) , url(../myfit/images/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    margin-top: 6rem;
+    height: 400px;
+}
+.banner .contbanner{
+    margin-top: 8rem;
+}
+.banner span{
+    font-size: 3rem;
+    color: white;
+    font-weight: 800;
+    padding: 5rem 1rem;
+   
+}
+.banner h3{
+    font-size: 6.1rem;
+    color: red;
+    text-transform: uppercase;
+    margin-top: 4rem;
+    font-weight: 900;
+}
+.banner p{
+    font-size: 1.9rem;
+    color: #aaa;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.banner .btn{
+    margin-top: .5rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, red 93%, transparent 90%);
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    margin-top: 4rem;
+}
+.banner .btn:hover{
+    transform: scale(1.2);
+    transition: .3s;
+    
+}
+/*partie footer */
+
+.boxfooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 8rem;
+    padding: 5rem;
+    background: linear-gradient(130deg, rgb(46, 44, 44), transparent 90%);
+}
+
+.boxfooter .box h3{
+    font-size: 3rem;
+    color: white;
+    padding: 1rem 0;
+
+}
+.boxfooter .box p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: rgb(247, 243, 243);
+}
+.boxfooter i{
+    padding-right: .9rem;
+    color: red;
+    
+}
+.boxfooter .box{
+    margin-left: 6rem;
+}
+.boxfooter .share a{
+    font-size: 3rem;
+    color: white;
+    margin: 2.3rem 2rem;
+}
+
+.boxfooter .share a:hover{
+    color: red;
+}
+
+/*gerer client */
+.formgerer{
+    display: flex;
+    margin-left: 850px;
+}
+
+.gererclt .formgerer{
+    margin-top: 10rem;
+    
+}
+.formgerer .input{
+    height: 40px;
+    width: 300px;
+    background: rgb(0, 0, 0);
+    color: #aaa;
+    font-size: 2rem;
+}
+.formgerer .confirmer{
+    margin-left: 1.5rem;
+    
+    padding: 1rem 2rem;
+    
+    background: linear-gradient(130deg, red 93%, transparent 90%);
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+   
+    cursor: pointer;
+   
+    border: none;
+}
+.msgsupp{
+    margin-top: 4rem;
+    font-size: 2.3rem;
+    color: red;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/*partie gerer client*/
+.listeclt{
+    text-align: center;
+    font-size: 3rem;
+    color: aliceblue;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem ;
+}
+.btnlistclt{
+  
+    padding: 1rem;
+    background: linear-gradient(130deg, rgb(253, 5, 5) 93%, transparent 90%);
+    color:white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 7rem;
+    border: none;
+}
+.table{
+    background: rgb(27, 27, 27);
+    color: aliceblue;
+    font-size: 1.3rem;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    padding: 1rem;
+    margin-bottom: 15rem;
+    text-align: center;
+    
+}
+.lignepremier{
+    background: red;
+}
+th{
+    width: 136px;
+    height: 40px;
+    padding: 1rem;
+    margin: .4rem;
+}
+td{
+    width: 136px;
+    height: 40px;
+    padding: 1rem;
+    margin: .4rem;
+}
+.edit i{
+    color: green;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.trash i{
+    color: red;
+    font-size: 1.5rem;
+    padding: 1rem; 
+}
+.typabn{
+    color: red;
+}
+
+/*partie suppression d'une perssonne */
+.partiesupp{    
+    margin-top: 10rem;
+    background: rgb(27, 27, 27);
+    margin-bottom: 10rem;
+}
+.partiesupp p{
+    text-align: center;
+    padding: 1.3rem;
+    margin: 5rem;
+    color: white;
+}
+.partiesupp .suppression{
+    display: flex;
+    align-items: center;
+    margin: 4rem auto;
+}
+/*partie form sport */
+
+.form{
+    margin-top: 11rem;
+    margin-left: 3rem;
+   
+}
+.form .start1{
+    font-size: 2rem;
+    color: #aaa;
+    font-weight: 600;
+}
+.form .combobox1{
+    background: black;
+    color: #aaa;
+    width: 160px;
+    height: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 1.2rem;
+}
+.form .submit1{
+    background: red;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    
+}
+.form .submit1:hover{
+    background: orange;
+    cursor: pointer;
+    transform: scale(1.2);
+    letter-spacing: .3rem;
+}
+.form .versliste1{
+    background: red;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: .5rem;
+}
+.form .versliste1:hover{
+    background: orange;
+    cursor: pointer;
+    transform: scale(1.2);
+    letter-spacing: .3rem;
+
+}
+.table-sport{
+    background: rgb(27, 27, 27);
+    color: aliceblue;
+    font-size: 1.3rem;
+    margin-left: 45rem;
+    margin-top: 4rem;
+    padding: 1rem;
+    margin-bottom: 15rem;
+    text-align: center;
+}
+.tableP{
+    background: rgb(31, 31, 31);
+    color: aliceblue;
+    font-size: 1.3rem;
+    margin-left: 10rem;
+    margin-top: 4rem;
+    padding: 1rem;
+    margin-bottom: 15rem;
+    text-align: center;
+}
+
+.tableP th{
+    width: 136px;
+    height: 40px;
+    padding: 1rem;
+    margin: .4rem;
+}
+.tableP td{
+    width: 136px;
+    height: 40px;
+    padding: 1rem;
+    margin: .4rem;
+}
+
+
+
+
+
+/*partie ajouter client */
+.section-ajout{
+    margin: 10rem auto;
+}
+.section-ajout h1{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+.form-ajouter{
+    margin-left: 6rem;
+}
+.section-ajout .form-ajouter .input{
+    background: transparent;
+    height: 30px;
+    border-top: 0;border-bottom: 1px solide rgb(90, 87, 87);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 200;
+    margin-top: 50px;
+  
+    margin-bottom: 20px;
+    color:white;
+    margin-left: 10px;
+}
+.section-ajout .form-ajouter .start1{
+    font-size: 2rem;
+    color: #aaa;
+    font-weight: 600;
+    margin-left: 5rem;
+}
+.section-ajout .form-ajouter .date{
+    background: transparent;
+    height: 30px;
+    border-top: 0;border-bottom: 1px solide rgb(90, 87, 87);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 200;
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    color:white;
+}
+.section-ajout .form-ajouter .combobox{
+    background: black;
+    color: #aaa;
+    width: 160px;
+    height: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 1.2rem;
+}
+.form-ajouter button{
+    background: red;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 5rem 1rem 5rem 30rem;
+    padding: 1.3rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.form-ajouter a{
+    background: red;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 5rem 0 5rem 20rem;
+    padding: 1.3rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.form-ajouter button:hover{
+    background: orange;
+    transform: scale(1.1);
+    transition: .5s;
+    
+}
+.form-ajouter a:hover{
+    background: orange;
+    transform: scale(1.1);
+    transition: .5s;
+    
+}
+
+
+/* mode visiteur */
+.log1{
+    font-size: 8rem;
+    text-align: center;
+    color: white;
+    margin-top: 10rem;
+    padding: 2rem;
+  
+   
+}
+.log2{
+    font-size: 9rem;
+    text-align: center;
+    color: red;
+    margin-top: 10rem;
+    padding: 2rem;
+   
+}
+
+
+.produit{
+    
+    background: rgb(15, 15, 15);
+   
+}
+.box-contain{
+    display: flex;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+.container{
+    height: 480px;
+    width: 320px;
+    box-shadow: 0px 0px 15px #ccc;
+    border-radius: 10px;
+    margin-top: 15rem;
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+    background: black;
+}
+.image-container{
+    height: 70%;
+    width: 100%;
+    position: relative;
+}
+.image-container .main-img{
+    height: 70%;
+    width: 80%;
+    position: absolute;
+    top: 10px;left: 15px;
+}
+.image-container .main-img img{
+    height: 100%;
+    width: 100%;
+}
+.image-container .sub-img{
+    height: 17%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.image-container .sub-img img{
+    height: 100%;
+    width: 70px;
+    cursor: pointer;
+    transition: .3s;
+   
+}
+.image-container .sub-img img:hover{
+    border: 2px solid red;
+}
+.image-container .sub-img .active{
+    border: 2px solid red;
+}
+.content-container{
+    color: aliceblue;
+    position: absolute;
+    left: 15px;top: 350px;
+}
+.content-container strong{
+    font-size: 2.3rem;
+    color: red;
+    font-weight: 900;
+    padding: .2rem;
+    margin-top: 15px;
+}
+.content-container p{
+    color: rgb(250, 246, 3);
+    font-size: 1.1rem;
+    margin: .3rem auto;
+    font-weight: 400;
+}
+.content-container button{
+    background: black;
+    color: aliceblue;
+    box-shadow: 0px 0px 10px #ccc;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: .7rem;
+    font-size: 1.1rem;
+    margin-left: 7rem;
+    margin-top: 5px;
+}
+.content-container button:hover{
+    background: red;
+    color: white;
+    transform: scale(1.1);
+    transition: .4s;
+   
+}
+.container:hover{
+    transform: scale(1.1);
+    transition: .4s;
+    
+}
+
+/* partie compte a rebours mode visiteur */
+
+.deal{
+    background: linear-gradient(rgba(0,0,0,.6) , rgba(0,0,0,.6)) , url(../myfit/images/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    margin-top: 6rem;
+    height: 700px;
+    margin-bottom: 5rem;
+}
+.deal .ligne .contenue .discount{
+    font-size: 6rem;
+    color: red;
+    font-weight: 900;
+    font-style: oblique;
+    margin-top: 3rem;
+}
+.deal .ligne .contenue .discount .prct{
+    font-size: 11rem;
+    color: white;
+    font-weight: 900;
+    font-style: oblique;
+    margin-top: 4rem;
+}
+.deal .ligne .contenue .deal-text{
+    font-size: 2rem;
+    color: white;
+    margin: 1.2rem;
+}
+
+.deal .ligne .contenue .count-down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 7.5rem;
+    margin-top: 10rem;
+    padding: 1rem;
+    color: red;
+    font-weight: 900;
+}
+
+.tmps{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries */
+
+@media(max-width:990px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 0 2rem;
+    }
+    .principal{
+        padding: 3rem 2rem;
+    }
+    .principal .swiper-slide{
+        padding: 2rem 5%;
+    }
+    .principal .swiper-slide .content{
+        width: 50rem;
+    }
+    .principal .swiper-slide .content h3{
+        font-size: 4rem;
+    }
+}
+
+
+
+
+@media(max-width:768px){
+    #menu-btn{
+        display: inline-block;
+        cursor: pointer;
+    
+    }
+    .fa-times{
+        transform: rotate(180deg);
+}
+    .header{
+        padding: 2rem;
+    }
+    .navbar{
+        position: absolute;
+        top:99%;left: 0;right: 0;
+        background: black;
+        clip-path: polygon(20% 0%, 80% 0%, 100% 0, 0 0);
+
+    }
+    .active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        transition: .5s;
+        
+}
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+    }
+    .section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .section .imagelogin img{
+        height: 70vh;
+        width: 38vw ;
+        margin-top: 70px;
+        margin-left: 120px;
+        box-shadow: rgba(58, 57, 57, 0.9);
+        filter: brightness(.6);
+        
+    }
+    
+    .form{
+        width: 220px;
+        height: 480px;
+         margin-top: 130px;
+         margin-left: 30px;
+    }
+    .form .input{
+        background: transparent;
+        height: 30px;
+        border-top: 0;border-bottom: 1px solide rgb(90, 87, 87);
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: 200;
+        margin-top: 20px;
+        margin-right: 25px;
+        margin-bottom: 20px;
+        color:rgb(90, 87, 87); 
+    }
+    .form .checkbox span{
+        font-size: 1.1rem;
+        color:rgb(90, 87, 87);
+        font-style: italic;
+        font-weight: 300;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding: 5px;
+    }
+    .form .submit{
+        border: 0.8px solid rgb(22, 22, 21);
+        font-size: 1.5rem;
+        padding: 5px;
+        margin-top: 30px;
+        margin-left: 80px;
+        box-shadow: rgba(58, 57, 57, 0.9);
+        background: rgb(235, 46, 12);
+        color: rgb(255, 255, 255);
+        font-style: italic;
+        letter-spacing: .3rem;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: .3s;
+       
+    }
+    .form .submit:hover{
+        letter-spacing: .3rem;
+        background: rgb(240, 138, 5);
+    }
+    .form .nv_cmpt .new{
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: aliceblue;
+        font-style: italic;
+    }
+    .form .nv_cmpt .creer{
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: rgb(230, 23, 23);
+        font-style: italic;
+        margin-left: 5px;
+    }
+    .form .nv_cmpt{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .form .date{
+        height: 30px;
+        border-top: 0;border-bottom: 1px solide rgb(90, 87, 87);
+        font-size: 1.2rem;
+        font-style: italic;
+        font-weight: 200;
+        margin-top: 20px;
+        color:rgb(90, 87, 87);
+        background: transparent; 
+    }
+    .form .start{
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 300;
+        color:rgb(90, 87, 87);
+        margin-right: 4px;
+    }
+    
+    .abouts{
+        gap: 3rem;
+    }
+    .abouts .imageabout{
+        margin: 5rem;
+    }
+    .abouts .contentabout .titleabout{
+        font-size: 3rem;
+    }
+    .features{
+        font-size: 1.1rem;
+
+    }
+    .features .box-container .box{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .table{
+        width: 370px;
+        height: 150rem;
+        font-size: .4rem;
+      
+    }
+}
+
+
+
+@media(max-width:450px){
+    html{
+        font-size: 45%;
+    }
+    
+     
+    .table{
+        width: 370px;
+        height: 150rem;
+        font-size: .4rem;
+      
+    }
+}
